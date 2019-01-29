@@ -44,6 +44,7 @@ _Note: iOS setup instructions are still pending since I don't have a Mac to test
 4. Install Cordova globally with the command `npm install -g cordova`
 5. Install the project dependencies with `npm install` (If "fsevents" fails to install, don't worry, it's a Mac only dependency)
 6. Check if all is correct with the command `cordova requirements` - if this return an "ok" you are ready to go!
+7. Add the platforms to the code, for android, run the command `cordova add platform android@x.x.x` or any other platform you wish, read the docs for more info on platforms.
 
 ### VSCode extensions
 
@@ -54,14 +55,15 @@ The following extensions are recommended but not required
 
 ### Execute the Dev environment
 
-After everything is installed, type the command `cordova run android` to 
-execute the app on a phone connected via ADB. If you installed the  AVD Android emulator and wish to run the app on it, use the command `cordova emulate android`
-
-### Usefull commands
-
 - `npm run dev` To execute a local dev enviroment on the browser without packaging the APK
-- `npm run test` To execute unit tests
-- `npm run build` To compile the code and build the APK for Android (iOS is pending)
+- `npm run test` To execute unit tests (TODO)
+
+### Building
+
+- `npm run build` To compile the code and prepare it for packaging the APK for Android (iOS is pending) - this step is necessary everytime you wish to update the APK
+
+- then do `cordova run android` to execute the compiled app on a phone connected via ADB. If you installed the AVD Android emulator and wish to run the app on it, use the command `cordova emulate android`
+
 
 ## Publish on the Google Play Store
 
