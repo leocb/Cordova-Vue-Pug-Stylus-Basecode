@@ -31,5 +31,5 @@
     <preference name="android-targetSdkVersion" value="19" />
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <preference name="SplashMaintainAspectRatio" value="true" />
-    <engine name="android" spec="^7.1.1" />
+    <engine name="android" spec="^7.1.4" />
 </widget>
