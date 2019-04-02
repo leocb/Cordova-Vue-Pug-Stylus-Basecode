@@ -55,7 +55,7 @@ The following extensions are recommended but not required
 
 ### Execute the Dev environment
 
-- `npm run dev` To execute a local dev enviroment on the browser without packaging the APK
+- `npm run dev` To execute a local dev enviroment on the browser without packaging the APK (If this command fails, crate a folder named `www` at the root)
 - `npm run test` To execute unit tests (TODO)
 
 ### Building
